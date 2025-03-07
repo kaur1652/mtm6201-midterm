@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- link to font awesome for icons -->
     <script src="https://kit.fontawesome.com/36418d3ae5.js" crossorigin="anonymous"></script>
+   
 </head>
 
 <body>
@@ -29,11 +30,19 @@
         <div><i class="fa-solid fa-magnifying-glass"></i>
         <i class="fas fa-user"></i></div>
         <a href="#">Sign Up</a>
+        
     </header>
     <!-- Hero Section -->
     <section>
         <div class="container">
-            <img src="images/hero-banner.png" alt="" class="hero-image">
+            <div class="hero-container">
+                <picture>
+                    <source srcset="images/hero-banner-600px.png" media="(max-width:600px)">
+                    <source srcset="images/hero-banner-1200px.png" media="(min-width:601px)">
+                    <img src="images/hero-banner-1200px.png" alt="" class="hero-image">
+                </picture>
+            </div>
+
             <h2>Find Your Dream Home</h2>
             <p>Explore our curated selection of exquisite properties meticulously tailored to your unique dream home
                 vision</p>
@@ -69,7 +78,12 @@
     <!-- We help You find your dream home section -->
     <section class="help-find-home">
         <div class="container">
-            <img src="images/residence.png" alt="" class="help-image">
+            <picture>
+                <source srcset="images/luxury-exterior-side-600px.jpeg" media="(max-width:600px)">
+                <source srcset="images/luxury-exterior-side-600px.jpeg" media="(min-width:601px)">
+                <img src="images/luxury-exterior-side-1200px.jpeg" alt="">
+            </picture>
+            
             <div>
                 <h2>We Help You To Find Your Dream Home</h2>
                 <p>From cozy cottages to luxurious estates, our dedicated team guides you through every step of the
@@ -113,7 +127,11 @@
         <h2>Our Popular Residences</h2>
         <div>
             <article>
-                <img src="images/room.jpeg" alt="">
+                <picture>
+                    <source srcset="images/residence-1-600.png" media="(max-width:600px)">
+                    <source srcset="images/residence-1-1200.png" media="(min-width:601px)">
+                    <img src="images/residence-1-1200.png" alt="">
+                </picture>
                 <h3>San Francisco, California</h3>
                 <p>4 Rooms 3,500 sq ft</p>
                 <button>
@@ -122,7 +140,11 @@
                 <h4>$2,500,000</h4>
             </article>
             <article>
-                <img src="images/residence.png" alt="">
+                <picture>
+                    <source srcset="images/residence-1-600.png" media="(max-width:600px)">
+                    <source srcset="images/residence-1-1200.png" media="(min-width:601px)">
+                    <img src="images/residence-1-1200.png" alt="">
+                </picture>
                 <h3>Beverly Hills, California</h3>
                 <p>3 Rooms 1,500 sq ft</p>
                 <button>
@@ -131,7 +153,11 @@
                 <h4>$850,000</h4>
             </article>
             <article>
-                <img src="images/residence.png" alt="">
+                <picture>
+                    <source srcset="images/residence-1-600.png" media="(max-width:600px)">
+                    <source srcset="images/residence-1-1200.png" media="(min-width:601px)">
+                    <img src="images/residence-1-1200.png" alt="">
+                </picture>
                 <h3>Palo Alto, California</h3>
                 <p>6 Rooms 4,000 sq ft</p>
                 <button>
@@ -146,7 +172,11 @@
         <h2>What People Say <br> About Dwello</h2>
         <div class="testimonial-container">
             <div class="testimonial">
-                <img src="images/residence.png" alt="">
+                <picture>
+                    <source srcset="images/testimonial-600.jpeg" media="(max-width:600px)">
+                    <source srcset="images/testimonial.jpeg" media="(min-width:601px)">
+                    <img src="images/testimonial.jpeg" alt="">
+                </picture>
                 <h3>Sarah Nguyen</h3>
                 <p>San Francisco</p>
                 <span class="rating"> <i class="fas fa-star"></i>5.0</span>
@@ -155,8 +185,11 @@
             </div>
 
             <div class="testimonial">
-                <img src="images/residence.png" alt="">
-
+                <picture>
+                    <source srcset="images/testimonial-600.jpeg" media="(max-width:600px)">
+                    <source srcset="images/testimonial.jpeg" media="(min-width:601px)">
+                    <img src="images/testimonial.jpeg" alt="">
+                </picture>
                 <h3>Michael Rodriguez</h3>
                 <p>San Diego</p>
                 <span class="rating"><i class="fas fa-star"></i> 4.5</span>
@@ -165,7 +198,11 @@
             </div>
 
             <div class="testimonial">
-                <img src="images/residence.png" alt="">
+                <picture>
+                    <source srcset="images/testimonial-600.jpeg" media="(max-width:600px)">
+                    <source srcset="images/testimonial.jpeg" media="(min-width:601px)">
+                    <img src="images/testimonial.jpeg" alt="">
+                </picture>
 
                 <h3>Emily Johnson</h3>
                 <p>Los Angeles</p>
