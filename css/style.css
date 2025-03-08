@@ -1,0 +1,60 @@
+:root{
+    --primary-color: #DDC7BB;
+    --secondary-color: #FEF7F2;
+    --heading-color: #2B1B12;
+    --text-color:#4F3527;
+    --background-color: white;
+    --button-bg: #2B1B12;
+    --font-family: "Montserrat", sans-serif;
+
+}
+body{
+    font-family: var(--font-family);
+    color: var(--text-color);
+    margin: 2rem 2rem;
+}
+
+.header-container{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    padding: 2rem 2rem;
+    color: var(--text-color);
+}
+
+.header-signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+
+}
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.sign-up{
+    background-color: var(--button-bg);
+}
+.sign-up a {
+    text-decoration: none;
+    color: var(--background-color);
+    }
+
+   
