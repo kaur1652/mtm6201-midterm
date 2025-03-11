@@ -38,6 +38,7 @@ p {
 
 .logo h1{
     font-size: 1.5rem;
+    line-height: 1.5;
     font-weight: bold;
     
 }
@@ -82,7 +83,7 @@ p {
     color: var(--background-color);
     }
 
-
+/* Hero Section */
 
 .container {
     background-color: var(--secondary-color);
@@ -96,7 +97,7 @@ p {
  
 .hero-text {
 
-      font-size: 20px;
+    font-size: 20px;
      line-height: 1.5;
      text-align: center;
      padding: 20px;
@@ -112,18 +113,13 @@ p {
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    margin-top: 15px;
     border: none;
 }
 
-
-
 .hero-container {
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .hero-container picture img {
@@ -132,57 +128,60 @@ p {
 
 }
 
+
 /* Search Bar */
-.search-bar-container{
+
+.search-bar-container {
 position: relative;    
-margin: -50px auto 50px;
-padding: 0 15px;
+margin: auto;
+max-width: 50%;
+padding: 1rem;
+
 }
 
 .search-bar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background: var(--primary-color);
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
-    max-width: 100%;
 }
 
 .search-bar form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .search-bar div {
-    display: flex;
-    align-items: center;
     padding: 10px;
     font-size: 14px;
 }
 
 .search-bar label {
-    font-weight: bold;
-    margin-bottom: 5px;
+    display: none;
 }
 
-.search-bar input, .search-bar select {
-    
-    padding: 12px;
+.search-bar input {
+    justify-content: flex-start;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
+.search-bar i {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
 .search-bar .button {
-    background-color: #4a2c1f;
+    background-color: var(--button-bg);
     border: none;
     padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 25px;
-    color: white;
+    color: var(--background-color);
     border-radius: 5px;
 }
 
