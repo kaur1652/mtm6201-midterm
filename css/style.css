@@ -13,16 +13,17 @@ body{
     color: var(--text-color);
     margin: auto;
     background-color: var(--background-color);
+    line-height: 1.6;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--heading-color);
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--text-color);
 }
 
@@ -38,7 +39,7 @@ p {
 
 .logo h1{
     font-size: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.6;
     font-weight: bold;
     
 }
@@ -185,9 +186,39 @@ padding: 1rem;
     border-radius: 5px;
 }
 
+/* help section */
+
+.help-find-home {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.help-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.help-container picture img {
+    width: 100%;
+    border-radius: 10px;
+}
 
 
-/* Responsive */
+
+.help-container > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.help-container > div:last-child strong {
+    font-size: 2rem; 
+    font-weight: bold;  
+}
+
 
 @media (min-width: 601px) {
     .header-container {
