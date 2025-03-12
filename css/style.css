@@ -117,8 +117,11 @@ p {
 }
  
 .hero-text {
+    display: flex;
+    flex-direction: column;
      text-align: center;
      padding: 20px;
+     justify-content: flex-start;
     
 }
 
@@ -290,7 +293,7 @@ padding: 20px;
     
     background: var(--primary-color);
     border-radius: 12px;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
 }
 .residence-card 
@@ -439,7 +442,8 @@ padding: 20px;
     line-height: 1.4;
 }
 
-@media (min-width: 601px) {
+@media screen  and (min-width: 601px) {
+ 
 
     /* Header */
     h1 {
@@ -471,36 +475,72 @@ padding: 20px;
         line-height: 1.8;
         font-weight: 400;
     }
+    
 
     /* Header */
+    .header-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    
     .nav ul {
         flex-direction: row;
-        justify-content: flex-start;
     }
-
-    .header-signup {
-        gap: 10px;
+    .nav ul li a{
+        padding: 2rem 2rem;
     }
+    
+    
+    
 
     .header-icons {
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
     }
 
     /* Hero Section */
     .container {
         flex-direction: row;
-        gap: 40px;
-    }
-
-    .hero-container {
+        gap: 20px;
         justify-content: space-between;
+        padding:  0px 40px;
+    }
+    .hero-text h2{
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+   
+    .hero-text p{
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    .button{
+
+        width: 100px;
     }
 
     /* Search Bar */
-    .search-bar-container {
-        width: 40%;
-    }
+    
+        .search-bar-container{
+            position: relative;    
+            margin: -50px auto 70px;
+
+            }
+            
+            .search-bar {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                border-radius: 10px;
+                
+            }
+            
 
     .search-bar form {
         flex-direction: row;
