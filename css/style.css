@@ -5,6 +5,7 @@
     --text-color:#4F3527;
     --background-color: white;
     --button-bg: #2B1B12;
+    --icon-bg: #FBF5F1;
     --font-family: "Montserrat", sans-serif;
 
 }
@@ -17,7 +18,7 @@ body{
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: var(--heading-color);
 }
@@ -25,6 +26,7 @@ h2 {
 p {
     font-size: 1rem;
     color: var(--text-color);
+    font-weight: 600;
 }
 
     /* Header */
@@ -56,6 +58,7 @@ p {
 .nav ul li a{
     text-decoration: none;
     color: var(--text-color);
+    font-weight: 600;
 }
 
 .header-signup {
@@ -212,12 +215,59 @@ padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-weight: 400;
 }
 
 .help-container > div:last-child strong {
     font-size: 2rem; 
     font-weight: bold;  
 }
+
+
+/* why choose us */
+
+.why-choose-us{
+    padding: 20px;
+    text-align: center;
+}
+
+.choose-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+  .feature-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: left;
+        
+    }
+
+    .feature-box {
+        background-color: var(--primary-color);
+        padding: 20px;
+        border-radius: 18px;
+    }
+    
+    .feature-box i {
+        font-size: 1.8rem;
+        color: var(--button-bg);
+        background-color: var(--icon-bg);
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .feature-box h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+
 
 
 @media (min-width: 601px) {
@@ -319,7 +369,10 @@ grid-template-columns: 1fr 1fr 1fr;
     font-weight: bold;
     color: #3b2b1a;
 }
-
+/* why choose us */
+.why-choose-us {
+    display: grid;
+grid-templa
 /* Sections */
 section {
     padding: 2rem;
@@ -481,7 +534,7 @@ input[type="email"] {
     }
 
 }
-
+} 
 
 
 
