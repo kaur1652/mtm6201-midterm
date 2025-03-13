@@ -312,21 +312,24 @@ p {
 .residence-card {
 
     background: var(--primary-color);
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 18px;
+    /* padding: 10px; */
     text-align: left;
 }
-
-.residence-card .residence-image img {
+.residence-card h3,p {
+    padding: 10px;
+}
+.residence-card .residence-image img{
     width: 100%;
-    border-radius: 18px;
-    height: 200px;
     object-fit: cover;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
 }
 
 .btn-price {
     display: flex;
     gap: 60%;
+    padding:10px ;
 
 }
 
@@ -360,16 +363,19 @@ p {
 
 .testimonial-card {
     background: var(--primary-color);
-    padding: 20px;
     border-radius: 18px;
     text-align: left;
+}
+.testimonial-card h3,p,i{
+    padding: 10px;
 }
 
 .testimonial-image img {
     width: 100%;
-    border-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+
     object-fit: cover;
-    padding: 0%;
 
 }
 
@@ -392,10 +398,10 @@ p {
     margin-bottom: 15px;
 }
 
-.help-options p {
+/* .help-options p {
     
     margin: 5px 0;
-}
+} */
 
 .help-form {
     display: flex;
@@ -595,20 +601,40 @@ p {
         gap: 50px;
     }  
 
-    Why Choose Us
+    /* Why Choose Us */
     .choose-text {
         gap: 20px;
     }
-
     .feature-container {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 10px;
+        text-align: left;
     }
+    
 
-    Residence Section
+    
+
+    /* Residence Section */
     .residence-container {
         grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        
     }
-
+   .residence-card{
+    border-radius: 18px;
+   }
+    .residence-card .residence-image img{
+        width: 100%;
+        /* border-radius-: 10px; */
+        object-fit: cover;
+        border-top-right-radius: 18px;
+        border-top-left-radius: 18px;
+    }
+    .residence-card h2,p{
+        padding: 10px;
+    }
     .btn-price {
         gap: 10px;
     }
@@ -616,11 +642,33 @@ p {
     .residence-btn {
         padding: 10px;
     }
-
-    Testimonials Section
+    
+    /* Testimonials Section */
     .testimonial-container {
         grid-template-columns: repeat(3, 1fr);
+
     }
+    .testimonials h2{
+        padding-bottom: 20px;
+    }
+    .testimonial-card {
+        border-radius: 18px;
+        text-align: left;
+        padding: 0;
+    }
+    .testimonial-card h3,p,i{
+        padding: 10px;
+    }
+    
+    .testimonial-image img {
+        /* width: 100%; */
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+    
+        object-fit: cover;
+    
+    }
+
 
     /* help form */
     .help-options {
