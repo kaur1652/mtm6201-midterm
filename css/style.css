@@ -93,6 +93,10 @@ p {
     font-weight: 600;
     line-height: 1.4;
 }
+.nav a:hover {
+    color: var(--button-bg);
+    font-weight: bolder; 
+}
 
 .header-signup {
     display: flex;
@@ -181,6 +185,17 @@ p {
 .hero-container picture img {
     max-width: 100%;
     display: block;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
