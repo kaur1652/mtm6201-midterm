@@ -52,7 +52,6 @@ p {
 }
 
 /* Header */
-
 .header-container {
     background-color: var(--secondary-color);
     display: flex;
@@ -61,6 +60,19 @@ p {
     padding: 1rem;
 }
 
+@keyframes bounceEffect {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.8); }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+
+.logo:hover {
+    animation: bounceEffect 0.6s ease-in-out;
+}
 
 .nav ul {
     display: flex;
@@ -100,7 +112,12 @@ p {
     background-color: var(--button-bg);
     padding: 5px 10px;
     border-radius: 5px;
-
+    transition: all 0.3s ease;
+}
+.sign-up:hover{
+    background: var(--text-color);
+    box-shadow: 0 0 10px var(--button-bg); 
+    transform: scale(1.05); 
 }
 
 .sign-up a {
@@ -126,9 +143,23 @@ p {
     text-align: center;
     padding: 20px;
     justify-content: flex-start;
-
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlide 1.5s ease-in-out forwards;
 }
 
+
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .button {
     display: inline-block;
@@ -154,7 +185,6 @@ p {
 
 
 /* Search Bar */
-
 .search-bar-container {
     display: flex;
     justify-content: center;
@@ -165,21 +195,17 @@ p {
     margin: 15px;
 }
 
-
-
 .search-bar form {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-
-
 .input-container {
     position: relative;
     display: flex;
     align-items: center;
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 10px;
     border: none;
@@ -187,8 +213,8 @@ p {
 
 .input-container i {
     position: absolute;
-    left: 10px; 
-    color: var(--button-bg); 
+    left: 10px;
+    color: var(--button-bg);
     font-size: 14px;
 }
 
@@ -199,15 +225,12 @@ p {
     background: transparent;
     outline: none;
     font-size: 14px;
-    color: var(--text-color); 
+    color: var(--text-color);
 }
-
 
 .search-bar label {
     display: none;
 }
-
-
 
 .sign-in {
     font-size: 16px;
@@ -215,6 +238,20 @@ p {
     background-color: var(--button-bg);
     padding: 10px;
     border-radius: 8px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px var(--text-color);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px var(--primary-color);
+    }
 }
 
 /* help section */
@@ -293,8 +330,6 @@ p {
     margin-bottom: 10px;
 }
 
-
-
 /* Our Popular Residences Section  */
 
 .residence-container {
@@ -316,10 +351,13 @@ p {
     /* padding: 10px; */
     text-align: left;
 }
-.residence-card h3,p {
+
+.residence-card h3,
+p {
     padding: 10px;
 }
-.residence-card .residence-image img{
+
+.residence-card .residence-image img {
     width: 100%;
     object-fit: cover;
     border-top-right-radius: 18px;
@@ -329,7 +367,7 @@ p {
 .btn-price {
     display: flex;
     gap: 60%;
-    padding:10px ;
+    padding: 10px;
 
 }
 
@@ -339,9 +377,16 @@ p {
     padding: 8px;
     border-radius: 8px;
     font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 
+.residence-btn:hover {
+    background: var(--text-color);
+    box-shadow: 0 0 10px var(--button-bg); 
+    transform: scale(1.05); 
+}
+ 
 
 /* Testimonials Section */
 .testimonials {
@@ -366,7 +411,10 @@ p {
     border-radius: 18px;
     text-align: left;
 }
-.testimonial-card h3,p,i{
+
+.testimonial-card h3,
+p,
+i {
     padding: 10px;
 }
 
@@ -397,11 +445,6 @@ p {
 
     margin-bottom: 15px;
 }
-
-/* .help-options p {
-    
-    margin: 5px 0;
-} */
 
 .help-form {
     display: flex;
@@ -453,11 +496,9 @@ p {
 .footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    ;
+
     gap: 20px;
 }
-
-
 
 .footer-column ul {
     list-style: none;
@@ -468,7 +509,8 @@ p {
     font-size: 18px;
     line-height: 1.4;
 }
-.contact-page{
+
+.contact-page {
     margin: 60px;
 }
 
@@ -478,7 +520,6 @@ p {
     text-align: center;
     padding: 50px 20px;
 }
-
 
 /* Contact Section */
 .contact-section {
@@ -531,9 +572,11 @@ p {
 .submit-button:hover {
     background-color: var(--button-bg);
 }
-.about-page{
+
+.about-page {
     margin: 60px;
 }
+
 @media screen and (min-width: 601px) {
 
 
@@ -629,47 +672,50 @@ p {
         padding: 20px 0;
 
     }
-    
-     .input-container{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-     }
+
+    .input-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
 
     /* Help Section */
-    .help-find-home{
+    .help-find-home {
         padding: 4rem 8rem;
     }
 
     .help-container {
         display: flex;
         flex-direction: row;
-        gap: 20px; 
+        gap: 20px;
     }
-    .help-picture{
-    width: 100%;
-}
-    
-    .help-text{
+
+    .help-picture {
+        width: 100%;
+    }
+
+    .help-text {
         display: flex;
         flex-direction: column;
         gap: 5px;
         text-align: left;
         padding: 20px;
     }
-    .help-text h2{
+
+    .help-text h2 {
         font-size: 40px;
     }
 
     .houses {
         flex-direction: row;
         gap: 50px;
-    }  
+    }
 
     /* Why Choose Us */
     .choose-text {
         gap: 20px;
     }
+
     .feature-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -677,29 +723,34 @@ p {
         margin: 10px;
         text-align: left;
     }
-    
 
-    
+
+
 
     /* Residence Section */
     .residence-container {
         grid-template-columns: repeat(3, 1fr);
         width: 80%;
-        
+
     }
-   .residence-card{
-    border-radius: 18px;
-   }
-    .residence-card .residence-image img{
+
+    .residence-card {
+        border-radius: 18px;
+    }
+
+    .residence-card .residence-image img {
         width: 100%;
         /* border-radius-: 10px; */
         object-fit: cover;
         border-top-right-radius: 18px;
         border-top-left-radius: 18px;
     }
-    .residence-card h2,p{
+
+    .residence-card h2,
+    p {
         padding: 10px;
     }
+
     .btn-price {
         gap: 10px;
     }
@@ -707,31 +758,36 @@ p {
     .residence-btn {
         padding: 10px;
     }
-    
+
     /* Testimonials Section */
     .testimonial-container {
         grid-template-columns: repeat(3, 1fr);
 
     }
-    .testimonials h2{
+
+    .testimonials h2 {
         padding-bottom: 20px;
     }
+
     .testimonial-card {
         border-radius: 18px;
         text-align: left;
         padding: 0;
     }
-    .testimonial-card h3,p,i{
+
+    .testimonial-card h3,
+    p,
+    i {
         padding: 10px;
     }
-    
+
     .testimonial-image img {
         /* width: 100%; */
         border-top-left-radius: 18px;
         border-top-right-radius: 18px;
-    
+
         object-fit: cover;
-    
+
     }
 
 
@@ -750,33 +806,34 @@ p {
         gap: 20px;
     }
 
-    .help-form input{
+    .help-form input {
         margin: 0%;
     }
+
     .help-btn {
         padding: 10px;
         margin: 0;
-        
+
     }
-    
+
     /* Footer */
 
-    .site-footer{
+    .site-footer {
         padding: 40px;
     }
- 
-    .footer-content{
+
+    .footer-content {
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
-    
-    .footer-links{
+
+    .footer-links {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-   
+
     .footer-column li {
         line-height: 1.6;
     }
-        
+
 }
