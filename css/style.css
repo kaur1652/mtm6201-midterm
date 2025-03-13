@@ -118,7 +118,7 @@ p {
 }
 
 
-.header-signup button {
+.button-link {
     background-color: var(--heading-color); 
     color: white;              
     border: none;              
@@ -131,10 +131,10 @@ p {
     transition: background-color 0.3s ease; }
 
 
-.header-signup a button:hover {
+.button-link:hover {
     background-color: var(--primary-color); }
 
-.header-signup a button:focus {
+.button-link:focus {
     outline: 2px solid var(--text-color); 
 }
 
