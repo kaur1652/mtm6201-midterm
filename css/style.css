@@ -189,12 +189,12 @@ p {
     position: absolute;
     left: 10px; 
     color: var(--button-bg); 
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .input-container input {
     width: 100%;
-    padding: 5px 5px 5px 25px;
+    padding: 10px 10px 10px 25px;
     border: none;
     background: transparent;
     outline: none;
@@ -468,7 +468,72 @@ p {
     font-size: 18px;
     line-height: 1.4;
 }
+.contact-page{
+    margin: 60px;
+}
 
+.hero-section {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.contact-container {
+    background: var(--primary-color);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    height: 120px;
+}
+
+/* Submit Button */
+.submit-button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-button:hover {
+    background-color: var(--button-bg);
+}
+.about-page{
+    margin: 60px;
+}
 @media screen and (min-width: 601px) {
 
 
